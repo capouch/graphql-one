@@ -2,17 +2,17 @@ import {
   GraphQLList
 } from 'graphql';
 
-import blogPostType from '../../types/blog-post';
+import imageRecType from '../../types/image';
 import getProjection from '../../get-projection';
-import BlogPostModel from '../../../models/blog-post';
+import ImageRecModel from '../../../models/image-rec';
 
 export default {
-  type: new GraphQLList(blogPostType),
+  type: new GraphQLList(imageRecType),
   args: {},
   resolve (root, params, options) {
     const projection = getProjection(options.fieldASTs[0]);
 
-    return BlogPostModel
+    return ImageRecModel
       .find()
       .select(projection)
       .exec();

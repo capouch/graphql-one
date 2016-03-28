@@ -6,15 +6,18 @@ import {
 } from 'graphql';
 
 export default new GraphQLObjectType({
-  name: 'Comment',
+  name: 'ImageRec',
   fields: {
     _id: {
       type: new GraphQLNonNull(GraphQLID)
     },
-    postId: {
-      type: new GraphQLNonNull(GraphQLID)
+    title: {
+      type: GraphQLString
     },
-    text: {
+    description: {
+      type: GraphQLString
+    },
+    filename: {
       type: GraphQLString
     }
   }

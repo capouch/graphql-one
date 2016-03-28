@@ -1,11 +1,11 @@
 {
-  "name": "graphqlnode",
-  "version": "0.0.0",
-  "description": "Introduction to GraphQL in nodeJS",
+  "name": "graphql-one",
+  "version": "0.0.1",
+  "description": "graphQL OSCON16 Sandbox",
   "license": "GPL",
   "repository": {
     "type": "git",
-    "url": "https://github.com/bruno12mota/graphql-nodejs"
+    "url": "https://github.com/capouch/graphql-one"
   },
   "scripts": {
     "start": "node index.js"

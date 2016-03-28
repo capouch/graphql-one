@@ -1,7 +1,5 @@
-import blogPost from './blog-post';
-import comment from './comment';
+import image from './image';
 
 export default {
-  ...blogPost,
-  ...comment
+  ...image
 };

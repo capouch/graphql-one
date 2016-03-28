@@ -7,14 +7,14 @@ import schema from './graphql';
 var app = express();
 
 // GraphqQL server route
-app.use('/graphql', graphqlHTTP(req => ({
+app.use('/oscon-test', graphqlHTTP(req => ({
   schema,
   pretty: true,
   graphiql: true
 })));
 
 // Connect mongo database
-mongoose.connect('mongodb://localhost/graphql');
+mongoose.connect('mongodb://localhost/oscon-test');
 
 // start server
 var server = app.listen(8080, () => {
