@@ -9,4 +9,4 @@ To use:
 
 * Make sure you are running MongoDB and you have write access to it
 
-Access GraphiQL at [this](https://localhost:8080/oscon-test) link.
+Access GraphiQL at [this](localhost:8080/oscon-test) link.
