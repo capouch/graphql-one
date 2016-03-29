@@ -11,6 +11,7 @@ import GeoPointRecModel from '../../../models/geopoint';
 
 export default {
   type: geoPointRecType,
+  description: "Retrieves a single GeoPoint document by its ID",
   args: {
     id: {
       name: 'id',

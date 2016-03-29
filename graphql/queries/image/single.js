@@ -11,6 +11,7 @@ import ImageRecModel from '../../../models/image-rec';
 
 export default {
   type: imageRecType,
+  description: "Retrieves a single image by ID",
   args: {
     id: {
       name: 'id',

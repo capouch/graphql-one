@@ -10,6 +10,7 @@ import GeoPointRecModel from '../../../models/geopoint';
 
 export default {
   type: new GraphQLList(geoPointRecType),
+  description: "Retrieves all GeoPoint records for a given image",
   args: {
     imageId: {
       name: 'imageId',

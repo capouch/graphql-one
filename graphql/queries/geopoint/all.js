@@ -10,6 +10,7 @@ import GeoPointRecModel from '../../../models/geopoint';
 
 export default {
   type: new GraphQLList(geoPointRecType),
+  description: "Retrieves all GeoPoint documents",
   args: {},
   resolve (root, params, options) {
     const projection = getProjection(options.fieldASTs[0]);
