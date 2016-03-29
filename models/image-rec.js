@@ -10,6 +10,9 @@ var imageRecSchema = new mongoose.Schema({
   },
   filename: {
     type: String
+  },
+  taglist: {
+    type: String
   }
 });
 
