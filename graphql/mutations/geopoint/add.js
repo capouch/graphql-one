@@ -8,6 +8,7 @@ import GeoPointRecModel from '../../../models/geopoint';
 
 export default {
   type: GraphQLBoolean,
+  description: "Add a new GeoPoint document",
   args: {
     data: {
       name: 'data',

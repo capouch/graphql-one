@@ -8,6 +8,7 @@ import ImageRecModel from '../../../models/image-rec';
 
 export default {
   type: GraphQLBoolean,
+  description: "Add a new image document",
   args: {
     data: {
       name: 'data',
