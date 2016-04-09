@@ -21,9 +21,12 @@ export default {
   resolve (root, params, options) {
     const projection = getProjection(options.fieldASTs[0]);
 
-    return ImageRecModel
+    const imageResult = ImageRecModel
       .findById(params.id)
       .select(projection)
       .exec();
+
+      // Hoping to extract some fields for a further query
+      return imageResult;
   }
 };
